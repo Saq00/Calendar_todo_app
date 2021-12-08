@@ -17,7 +17,7 @@ const App = () =>  {
   return (
     <div className='container'>
         <FormHeader date={date}/>
-            <div class="parent">
+            <div class="content">
                 <div class="div1"> <FormWeek date={date} /></div>
                 <div class="div2"> <FormWeek date={date} /></div>
                 <div class="div3"> <FormWeek date={date} /></div>

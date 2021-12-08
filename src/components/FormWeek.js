@@ -1,4 +1,4 @@
-import React , { useState , useEffect} from "react";
+import React , { useState } from "react";
 import Header from './Header.js';
 import Form from './Form.js' ;
 import TodoList from "./TodoList.js";
@@ -11,9 +11,7 @@ const FormWeek = (p) => {
     const [todos , setTodos]  = useState(initialState);
     const [editTodo , setEditTodo ] = useState(null)
 
-        useEffect(() => {
-            localStorage.setItem('todos' , JSON.stringify(todos))
-        }, [todos])
+        
     
       return(
         <div >

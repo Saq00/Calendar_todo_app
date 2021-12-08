@@ -1,4 +1,4 @@
-import React , {useEffect} from "react";
+import React  from "react";
 import {v4 as uuidv4 } from 'uuid';
 
 
@@ -12,13 +12,7 @@ const Form = ({input , setInput , todos , setTodos , editTodo , setEditTodo}) =>
         setEditTodo("");
     };
 
-    useEffect(() => {
-        if (editTodo) {
-            setInput(editTodo.title);
-        } else {
-            setInput("")
-        }
-    }, [setInput , editTodo]);
+    
 
     const onInputChange = (event) => {
         setInput(event.target.value) ;

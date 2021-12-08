@@ -73,13 +73,13 @@ body{
 
 .list-item {
     display: flex;
-    padding: 10px;
     min-height: 20px;
+    padding: 10px  ;
     justify-content: space-between;
     align-items: center;
 }
 
-.button-complete , .button-delete , .button-edit {
+.button-complete , .button-delete {
     border: none;
     outline: none;
     cursor: pointer;
@@ -90,10 +90,7 @@ body{
     transition: all .6s ease-in-out ;
 }
 
-.button-edit:hover{
-    opacity: .3;
-    transition: all .6s ease-in-out ;
-}
+
 .button-complete:hover{
     opacity: .3;
     transition: all .6s ease-in-out ;
@@ -130,6 +127,10 @@ body{
     transition: .6s all ease-in-out;
     background:none ;
     
+}
+.list:hover{
+    transition: .6s all ease-in-out;
+    border-bottom: 1px solid grey;
 }
 
 input:focus , button:focus {
@@ -195,7 +196,7 @@ input:focus , button:focus {
     padding: 15px;
 }
 
-.parent {
+.content {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
