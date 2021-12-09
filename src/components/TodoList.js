@@ -1,6 +1,6 @@
 import React from "react";
 
-const TodoList =  ({todos , setTodos , setEditTodo}) => {
+const TodoList =  ({todos , setTodos }) => {
 
     const handleComplete = (todo ) => {
         setTodos(

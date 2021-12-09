@@ -19,8 +19,8 @@ const Form = ({input , setInput , todos , setTodos , editTodo , setEditTodo}) =>
 
     }
 
-    const onFormSubmit = (event) => {
-        event.preventDefault(); 
+    const onFormSubmit = (e) => {
+        e.preventDefault(); 
         if (!editTodo){
             setTodos([...todos , {id: uuidv4() , title : input , completed: false  }]);
         setInput("");
